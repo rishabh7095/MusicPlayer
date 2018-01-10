@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.player">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:id="@+id/img"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="||"
+        android:id="@+id/play"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="&lt;&lt;"
+        android:id="@+id/fb"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/play"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=">>"
+        android:id="@+id/ff"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/play"
+        android:background="@drawable/button" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="|&lt;"
+        android:id="@+id/prev"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/fb"
+        android:background="@drawable/button" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=">|"
+        android:id="@+id/next"
+        android:layout_alignBottom="@+id/img"
+        android:layout_toEndOf="@+id/ff"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button" />
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
